@@ -167,8 +167,22 @@ section.sec { padding: 96px 0; position: relative; overflow: hidden; }
   .iso-rail { display: none; }
 }
 
+@media (max-width: 960px) {
+  .partners-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+    row-gap: 32px !important;
+    column-gap: 20px !important;
+  }
+}
+
 @media (max-width: 720px) {
   .grid-3 { grid-template-columns: 1fr !important; }
   .grid-2 { grid-template-columns: 1fr !important; }
-  .grid-4 { grid-template-columns: repeat(2, 1fr) !important; }
+  .grid-4 { grid-template-columns: 1fr !important; }
+  .partners-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    row-gap: 28px !important;
+    column-gap: 16px !important;
+  }
+  .partner-logo { height: 72px !important; }
 }

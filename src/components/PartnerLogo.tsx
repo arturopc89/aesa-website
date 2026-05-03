@@ -4,6 +4,7 @@ type Props = { name: string; src: string };
 export function PartnerLogo({ name, src }: Props) {
   return (
     <div
+      className="partner-logo"
       style={{
         display: "flex",
         alignItems: "center",

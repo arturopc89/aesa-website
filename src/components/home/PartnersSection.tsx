@@ -57,6 +57,7 @@ export function PartnersSection() {
         </Reveal>
         <div
           ref={gridRef}
+          className="partners-grid"
           style={{
             display: "grid",
             gridTemplateColumns: `repeat(${COLS}, 1fr)`,
