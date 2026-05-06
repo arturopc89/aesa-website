@@ -21,7 +21,7 @@ export default function ContactoPage() {
   return (
     <>
       <section style={{ position: "relative", paddingTop: 180, paddingBottom: 48, overflow: "hidden" }} className="pattern-bg">
-        <Watermark side="right" size={680} opacity={0.07} top={40} />
+        <Watermark side="right" size={960} opacity={0.09} top={40} />
         <div className="wrap" style={{ position: "relative", textAlign: "center" }}>
           <div className="eyebrow">CONTACTO</div>
           <h1

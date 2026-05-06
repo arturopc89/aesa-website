@@ -6,7 +6,23 @@ import { SectionHeader } from "../SectionHeader";
 
 export function SolucionesSection() {
   return (
-    <section className="sec pattern-bg" style={{ position: "relative" }}>
+    <section className="sec pattern-bg" style={{ position: "relative", overflow: "hidden" }}>
+      <div
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          left: "-8%",
+          top: "10%",
+          width: "56vw",
+          height: "56vw",
+          opacity: 0.1,
+          pointerEvents: "none",
+          backgroundImage: 'url("/assets/aesa-A-official.png")',
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "contain",
+          backgroundPosition: "left center",
+        }}
+      />
       <div className="wrap" style={{ position: "relative" }}>
         <Reveal>
           <SectionHeader

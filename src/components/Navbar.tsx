@@ -49,7 +49,7 @@ export function Navbar() {
           alignItems: "center",
           justifyContent: "space-between",
           gap: 24,
-          height: scrolled ? 68 : 84,
+          height: scrolled ? 80 : 104,
           transition: "height .35s ease, background .35s ease, border-radius .35s ease, box-shadow .35s ease, padding .35s ease",
           background: isHomeOverlay ? "rgba(255,255,255,.86)" : "transparent",
           backdropFilter: isHomeOverlay ? "blur(8px) saturate(140%)" : "none",
@@ -64,10 +64,11 @@ export function Navbar() {
         <Link href="/" style={{ display: "flex", alignItems: "center" }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/aesa-logo.png"
+            className="navbar-logo"
+            src="/assets/aesa-logo-eslogan-color.png"
             alt="AESA · Atenas Energía S.A."
             style={{
-              height: scrolled ? 24 : 30,
+              height: scrolled ? 64 : 88,
               width: "auto",
               display: "block",
               transition: "height .3s ease",

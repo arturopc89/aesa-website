@@ -8,6 +8,8 @@ export const IMG = {
   energia: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=80",
   industrias: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1600&q=80",
   telecom: "https://images.unsplash.com/photo-1551808525-51a94da548ce?auto=format&fit=crop&w=1600&q=80",
+  seguridad: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1600&q=80",
+  datacenters: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1600&q=80",
   scada: "https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=1600&q=80",
   solarBess: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=80",
   reclosers: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80",
@@ -56,20 +58,20 @@ export const SOLUTIONS: Solution[] = [
     name: "Energía",
     img: IMG.energia,
     blurb:
-      "Generación, transmisión y distribución. Energías renovables, almacenamiento y transición energética llave en mano.",
+      "Generación, transmisión y distribución. Renovables, almacenamiento y transición energética llave en mano.",
     bullets: [
       "Subestaciones MT/AT",
       "Reconectadores y telecontrol",
       "Solar + BESS",
-      "Líneas y tendido FO",
+      "Líneas y obra eléctrica",
     ],
   },
   {
     id: "industrias",
-    name: "Industrias",
+    name: "Industrias, Alimentos y Transporte",
     img: IMG.industrias,
     blurb:
-      "Automatización industrial, integración de procesos y plataformas de control para plantas críticas.",
+      "Automatización industrial, integración de procesos y plataformas de control para plantas críticas, industria alimentaria y operaciones de transporte.",
     bullets: [
       "Automatización de procesos",
       "SCADA / HMI",
@@ -82,12 +84,38 @@ export const SOLUTIONS: Solution[] = [
     name: "Telecomunicaciones",
     img: IMG.telecom,
     blurb:
-      "Infraestructura crítica, redes industriales, seguridad y comunicaciones para servicios esenciales.",
+      "Infraestructura crítica, redes industriales y comunicaciones para servicios esenciales y enlaces de misión crítica.",
     bullets: [
       "Redes industriales",
-      "Ciberseguridad OT",
+      "Enlaces de misión crítica",
       "Tendido de fibra óptica",
       "Equipamiento de campo",
+    ],
+  },
+  {
+    id: "seguridad",
+    name: "Seguridad",
+    img: IMG.seguridad,
+    blurb:
+      "Sistemas integrales de seguridad electrónica y física: CCTV, control de accesos, cercos perimetrales, detección y aberturas técnicas.",
+    bullets: [
+      "CCTV y videoanalítica",
+      "Cercos perimetrales",
+      "Detección y PCI",
+      "Aberturas técnicas y control de accesos",
+    ],
+  },
+  {
+    id: "datacenters",
+    name: "Datacenters",
+    img: IMG.datacenters,
+    blurb:
+      "Diseño, integración y operación de salas técnicas: energía crítica, climatización de precisión, racks, monitoreo DCIM y ciberseguridad OT.",
+    bullets: [
+      "Energía crítica · UPS · BESS",
+      "Climatización de precisión",
+      "Monitoreo DCIM",
+      "Ciberseguridad OT",
     ],
   },
 ];

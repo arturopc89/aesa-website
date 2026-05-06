@@ -20,7 +20,7 @@ export default function CasosPage() {
         sub="Una selección de proyectos entregados a clientes públicos y privados en los últimos años."
       />
       <section className="sec" style={{ position: "relative" }}>
-        <Watermark side="left" size={520} opacity={0.05} top={80} />
+        <Watermark side="left" size={780} opacity={0.07} top={80} />
         <div className="wrap" style={{ position: "relative" }}>
           <div className="grid-4" style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 20 }}>
             {NOVEDADES.map((c, i) => (

@@ -78,15 +78,17 @@ export function DesarrolloSection() {
                 aria-hidden="true"
                 style={{
                   position: "absolute",
-                  right: -40,
-                  bottom: -40,
-                  width: 240,
-                  height: 240,
-                  opacity: 0.08,
-                  backgroundImage:
-                    "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><path d='M100 18 L186 182 L150 182 L132 146 L68 146 L50 182 L14 182 Z M82 118 L118 118 L100 80 Z' fill='white'/></svg>\")",
+                  right: 24,
+                  bottom: 24,
+                  width: 200,
+                  height: 200,
+                  opacity: 0.18,
+                  pointerEvents: "none",
+                  backgroundImage: 'url("/assets/aesa-A-official.png")',
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "contain",
+                  backgroundPosition: "right bottom",
+                  filter: "brightness(0) invert(1)",
                 }}
               />
               <div className="eyebrow" style={{ color: "rgba(255,255,255,.6)", marginBottom: 14 }}>

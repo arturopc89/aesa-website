@@ -1,19 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, Inter_Tight, JetBrains_Mono } from "next/font/google";
+import { Poppins, JetBrains_Mono } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import "./globals.css";
 
-const inter = Inter({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const interTight = Inter_Tight({
-  subsets: ["latin"],
-  variable: "--font-inter-tight",
-  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
 });
 
@@ -30,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s · AESA",
   },
   description:
-    "Empresa de ingeniería multisectorial. Soluciones tecnológicas de vanguardia en Energía, Industrias y Telecomunicaciones. Paraguay, desde el año 2000.",
+    "Empresa de ingeniería multisectorial. Tecnología integrada para Energía, Industrias · Alimentos · Transporte, Telecomunicaciones, Seguridad y Datacenters. Paraguay, desde el año 2000.",
   keywords: [
     "AESA",
     "Atenas Energía",
@@ -61,7 +55,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`${inter.variable} ${interTight.variable} ${jetbrainsMono.variable}`}>
+    <html lang="es" className={`${poppins.variable} ${jetbrainsMono.variable}`}>
       <body>
         <Navbar />
         <main>{children}</main>

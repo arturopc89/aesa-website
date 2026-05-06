@@ -7,7 +7,7 @@ import { Watermark } from "../Watermark";
 export function QuienesSomos() {
   return (
     <section className="sec" style={{ position: "relative" }}>
-      <Watermark side="left" size={520} opacity={0.05} top={40} />
+      <Watermark side="left" size={780} opacity={0.07} top={40} />
       <div className="wrap" style={{ position: "relative" }}>
         <Reveal>
           <SectionHeader

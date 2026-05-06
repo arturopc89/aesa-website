@@ -7,7 +7,7 @@ import { Watermark } from "../Watermark";
 export function NovedadesSection() {
   return (
     <section className="sec" style={{ background: "var(--aesa-bg2)", position: "relative" }}>
-      <Watermark side="left" size={520} opacity={0.05} top={60} />
+      <Watermark side="left" size={780} opacity={0.07} top={60} />
       <div className="wrap" style={{ position: "relative" }}>
         <Reveal>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", gap: 24, marginBottom: 48, flexWrap: "wrap" }}>

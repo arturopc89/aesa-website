@@ -15,9 +15,9 @@ export default function SolucionesPage() {
   return (
     <>
       <PageHero
-        title="Soluciones tecnológicas de vanguardia."
+        title="Soluciones tecnológicas integradas."
         kicker="SOLUCIONES"
-        sub="Proyectos llave en mano para entregar resultados a medida en Energía, Industrias y Telecomunicaciones."
+        sub="Proyectos llave en mano en Energía, Industrias · Alimentos · Transporte, Telecomunicaciones, Seguridad y Datacenters."
       />
       <section className="sec pattern-bg">
         <div className="wrap">

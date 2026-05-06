@@ -14,7 +14,7 @@ export function Footer() {
         overflow: "hidden",
       }}
     >
-      <Watermark side="right" size={580} opacity={0.05} color="#ffffff" top={-80} />
+      <Watermark side="right" size={580} opacity={0.07} light top={-80} />
       <div className="wrap" style={{ position: "relative" }}>
         <div
           className="grid-4"
@@ -29,9 +29,9 @@ export function Footer() {
           <div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/aesa-logo.png"
-              alt="AESA"
-              style={{ height: 36, width: "auto", filter: "brightness(0) invert(1)" }}
+              src="/assets/aesa-logo-eslogan-white.png"
+              alt="AESA · Adding Value"
+              style={{ height: 56, width: "auto" }}
             />
             <p style={{ maxWidth: 320, marginTop: 18, fontSize: 13.5, lineHeight: 1.7, color: "#9aa39d" }}>
               Empresa de ingeniería multisectorial que ofrece soluciones tecnológicas de vanguardia a diferentes sectores del mercado, con presencia en Paraguay y la región.

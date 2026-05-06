@@ -40,11 +40,11 @@ export default function NosotrosPage() {
       <PageHero
         title="Atenas Energía S.A."
         kicker="NOSOTROS"
-        sub="Una empresa de ingeniería multisectorial fundada en el año 2000 por sus actuales directores."
+        sub="Empresa de ingeniería multisectorial. Diseñamos, integramos y operamos tecnología para sectores críticos desde el año 2000."
       />
 
       <section className="sec" style={{ position: "relative" }}>
-        <Watermark side="left" size={620} opacity={0.05} top={80} />
+        <Watermark side="left" size={920} opacity={0.07} top={80} />
         <div className="wrap" style={{ position: "relative" }}>
           <div className="grid-2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }}>
             <div>
