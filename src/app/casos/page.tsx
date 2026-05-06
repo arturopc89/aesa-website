@@ -8,7 +8,7 @@ import { NOVEDADES } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Casos de éxito",
   description:
-    "Proyectos entregados por AESA a clientes públicos y privados en Paraguay y la región. ITAIPU, ANDE, MOPC, Yacyretá, y más.",
+    "Proyectos de ingeniería eléctrica, SCADA y automatización industrial entregados por AESA en Paraguay. Casos reales para ITAIPU Binacional, ANDE, MOPC, Yacyretá, CIE y empresas privadas.",
 };
 
 export default function CasosPage() {
@@ -32,7 +32,7 @@ export default function CasosPage() {
                 >
                   <div className="asym" style={{ height: 200, borderRadius: "18px 18px 0 0", overflow: "hidden" }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={c.img} alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    <img src={c.img} alt={`${c.t} — caso de éxito AESA Paraguay`} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                   </div>
                   <div style={{ padding: "22px 22px 26px", display: "flex", flexDirection: "column", gap: 14, flex: 1 }}>
                     <span style={{ fontFamily: "var(--font-mono)", fontSize: 10.5, letterSpacing: ".12em", color: "var(--aesa-3)", fontWeight: 600 }}>

@@ -21,11 +21,11 @@ export function QuienesSomos() {
           style={{ display: "grid", gridTemplateColumns: "1.4fr .9fr 1fr", gap: 18, marginTop: 64 }}
         >
           <Reveal delay={100}>
-            <AsymImage src={IMG.aboutTeam} height={420} size="lg" parallax parallaxStrength={0.5} />
+            <AsymImage src={IMG.aboutTeam} alt="Equipo de ingenieros y técnicos de AESA — empresa de ingeniería eléctrica en Paraguay" height={420} size="lg" parallax parallaxStrength={0.5} />
           </Reveal>
           <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
             <Reveal delay={200}>
-              <AsymImage src={IMG.aboutOps} height={200} size="sm" parallax parallaxStrength={0.45} />
+              <AsymImage src={IMG.aboutOps} alt="Sala de control SCADA — automatización industrial AESA Paraguay" height={200} size="sm" parallax parallaxStrength={0.45} />
             </Reveal>
             <Reveal delay={280}>
               <div
@@ -50,7 +50,7 @@ export function QuienesSomos() {
             </Reveal>
           </div>
           <Reveal delay={300}>
-            <AsymImage src={IMG.aboutField} height={420} size="lg" parallax parallaxStrength={0.55} />
+            <AsymImage src={IMG.aboutField} alt="Trabajo de campo — instalación y comisionamiento eléctrico AESA Paraguay" height={420} size="lg" parallax parallaxStrength={0.55} />
           </Reveal>
         </div>
       </div>

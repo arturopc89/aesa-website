@@ -204,7 +204,7 @@ export function Hero() {
           </Reveal>
           <Reveal delay={220}>
             <p style={{ fontSize: "clamp(16px,1.25vw,19px)", lineHeight: 1.6, color: "#3b4a40", maxWidth: 540, margin: "0 0 36px" }}>
-              Integramos tecnología, datos e ingeniería para optimizar operaciones, impulsar la eficiencia y acelerar el crecimiento sostenible de sectores críticos.
+              Empresa de ingeniería eléctrica, SCADA y automatización en Asunción, Paraguay. Ejecutamos proyectos llave en mano para ANDE, ITAIPU, MOPC y el sector privado desde el año 2000.
             </p>
           </Reveal>
           <Reveal delay={320}>

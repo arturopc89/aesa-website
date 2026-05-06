@@ -8,16 +8,16 @@ import { SOLUTIONS } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Soluciones",
   description:
-    "Soluciones tecnológicas de vanguardia en Energía, Industrias y Telecomunicaciones. Proyectos llave en mano por AESA.",
+    "Soluciones de ingeniería eléctrica, SCADA y automatización industrial en Paraguay. AESA diseña e integra proyectos llave en mano en Energía, Industrias · Alimentos · Transporte, Telecomunicaciones, Seguridad y Datacenters para ANDE, ITAIPU y el sector privado.",
 };
 
 export default function SolucionesPage() {
   return (
     <>
       <PageHero
-        title="Soluciones tecnológicas integradas."
+        title="Ingeniería eléctrica, SCADA y automatización en Paraguay."
         kicker="SOLUCIONES"
-        sub="Proyectos llave en mano en Energía, Industrias · Alimentos · Transporte, Telecomunicaciones, Seguridad y Datacenters."
+        sub="Proyectos llave en mano para Energía, Industrias · Alimentos · Transporte, Telecomunicaciones, Seguridad y Datacenters. Clientes: ANDE, ITAIPU, MOPC y sector privado."
       />
       <section className="sec pattern-bg">
         <div className="wrap">
@@ -27,7 +27,7 @@ export default function SolucionesPage() {
                 <article className="card" style={{ padding: 14, height: "100%", display: "flex", flexDirection: "column" }}>
                   <div className="asym" style={{ height: 300 }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={s.img} alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    <img src={s.img} alt={`Soluciones de ${s.name} en Paraguay — AESA ingeniería`} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                   </div>
                   <div style={{ padding: "24px 16px 16px", flex: 1, display: "flex", flexDirection: "column" }}>
                     <span style={{ fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: ".1em", color: "var(--aesa-3)", fontWeight: 600 }}>

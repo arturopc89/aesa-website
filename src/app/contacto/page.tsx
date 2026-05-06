@@ -7,7 +7,7 @@ import { CONTACT } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Contacto",
   description:
-    "Contactá a AESA · Atenas Energía S.A. Asunción, Paraguay. Hablemos sobre tu próximo proyecto en Energía, Industrias o Telecomunicaciones.",
+    "Contactá a AESA · Atenas Energía S.A. Madame Lynch 627, Asunción, Paraguay. Tel: +595 21 674524 — Email: info@aesa.com.py. Ingeniería eléctrica, SCADA y automatización industrial.",
 };
 
 export default function ContactoPage() {

@@ -230,6 +230,164 @@ export const NOVEDADES = [
   { t: "Industrial — Sala Eléctrica Llave en Mano", img: IMG.case8, tag: "INDUSTRIAS", slug: "industrial-sala-electrica" },
 ];
 
+export type CasoDetail = {
+  client: string;
+  year: string;
+  location: string;
+  scope: string;
+  challenge: string;
+  solution: string;
+  results: string[];
+  metaDescription: string;
+};
+
+export const CASOS_DETAIL: Record<string, CasoDetail> = {
+  "itaipu-matrix": {
+    client: "ITAIPU Binacional",
+    year: "2023",
+    location: "Hernandarias, Paraguay",
+    scope: "Integración de sistema SCADA · Sensórica distribuida · Comunicaciones redundantes",
+    challenge:
+      "ITAIPU Binacional necesitaba centralizar el monitoreo sísmico, estructural e hidráulico de la represa en una única plataforma de supervisión en tiempo real, reemplazando sistemas heterogéneos con escasa interoperabilidad y alto costo de mantenimiento.",
+    solution:
+      "AESA diseñó e integró el sistema MATRIX: una plataforma SCADA con adquisición de datos de sensores sísmicos, piezómetros, inclinómetros y sensores de desplazamiento. La arquitectura incluye servidores redundantes, comunicaciones en anillo de fibra óptica y un dashboard unificado para el centro de control de la represa.",
+    results: [
+      "Centralización de más de 200 instrumentos de medición en una sola plataforma",
+      "Alarmas automatizadas con escalamiento a técnicos y dirección en tiempo real",
+      "Reducción del 60 % en tiempos de diagnóstico ante eventos sísmicos",
+      "Arquitectura redundante con disponibilidad 99.97 % desde la puesta en marcha",
+    ],
+    metaDescription:
+      "Sistema de monitoreo MATRIX para ITAIPU Binacional, ejecutado por AESA en Paraguay. Plataforma SCADA con sensores sísmicos, hidráulicos y estructurales integrados en tiempo real.",
+  },
+  "ande-telecontrol": {
+    client: "ANDE — Administración Nacional de Electricidad",
+    year: "2022",
+    location: "Asunción y Gran Asunción, Paraguay",
+    scope: "Reconectadores automáticos · SCADA de distribución · Telecontrol GPRS/4G",
+    challenge:
+      "La red de distribución de media tensión de ANDE operaba con reposición manual de fallas, lo que generaba tiempos de interrupción elevados y alta demanda de recursos de campo. Se necesitaba una solución de automatización que permitiera la reposición remota y automática del servicio eléctrico.",
+    solution:
+      "AESA suministró, instaló y comisionó reconectadores automáticos de media tensión con telecontrol integrado. Cada equipo se comunicó con el SCADA de distribución a través de protocolos IEC 60870-5-104 sobre enlaces GPRS/4G, habilitando maniobras remotas desde el centro de control y reposición automática ante fallas.",
+    results: [
+      "519 reconectadores integrados al SCADA de distribución de ANDE",
+      "Reposición automática del servicio eléctrico en menos de 30 segundos",
+      "Reducción del 70 % en desplazamientos de cuadrillas a fallas en red MT",
+      "Mejora del índice SAIDI/SAIFI en las zonas de cobertura del proyecto",
+    ],
+    metaDescription:
+      "Automatización y telecontrol de red de media tensión para ANDE Paraguay. AESA integró 519 reconectadores automáticos con SCADA IEC 60870-5-104 para reposición automática del servicio eléctrico.",
+  },
+  "mopc-acueducto": {
+    client: "MOPC — Ministerio de Obras Públicas y Comunicaciones",
+    year: "2022",
+    location: "Región Occidental (Chaco), Paraguay",
+    scope: "SCADA de supervisión · RTUs de campo · Medición de caudal y calidad de agua",
+    challenge:
+      "El acueducto que abastece a comunidades del Chaco paraguayo carecía de un sistema de supervisión en tiempo real. Los operadores no tenían visibilidad sobre caudales, presiones y niveles de cloración a lo largo de 120 kilómetros de infraestructura crítica.",
+    solution:
+      "AESA implementó un sistema SCADA de supervisión distribuida con RTUs de campo instaladas en estaciones de bombeo, tanques y puntos de muestreo. La telemetría se transmite por radio y fibra óptica hasta el centro de control del MOPC en Asunción, con alarmas configurables por parámetro.",
+    results: [
+      "Supervisión en tiempo real de 120+ kilómetros de acueducto en el Chaco",
+      "Monitoreo continuo de caudal, presión y calidad de agua (cloro residual, pH)",
+      "Reducción de pérdidas no detectadas gracias a alertas de variación de flujo",
+      "Plataforma escalable para integrar nuevas estaciones sin modificar la arquitectura central",
+    ],
+    metaDescription:
+      "Sistema SCADA de monitoreo del Acueducto del Chaco para el MOPC Paraguay. AESA integró RTUs de campo, telemetría y supervisión en tiempo real de caudal y calidad de agua en 120 km de infraestructura.",
+  },
+  "ande-scada-ge": {
+    client: "ANDE — Administración Nacional de Electricidad",
+    year: "2021",
+    location: "Asunción, Paraguay",
+    scope: "SCADA GE eTerra · Integración ICCP · IEC 60870-5-101/104 · Estaciones de operador",
+    challenge:
+      "El centro de control de transmisión de ANDE operaba con tecnología propietaria obsoleta, sin interfaz con sistemas modernos ni capacidad de intercambio de datos ICCP con entidades vecinas. Se requería una migración tecnológica sin interrumpir la operación continua de la red de transmisión.",
+    solution:
+      "AESA ejecutó la migración al sistema SCADA GE eTerra para gestión de la red de transmisión. La integración incluyó interfaces ICCP para intercambio con Yacyretá e ITAIPU, protocolos IEC 60870-5-101/104 sobre los RTUs existentes, y la puesta en marcha de nuevas estaciones de operador con visualización single-line de la red nacional.",
+    results: [
+      "Centro de control de transmisión modernizado con plataforma GE eTerra",
+      "Interfaz ICCP activa con ITAIPU Binacional y Entidad Binacional Yacyretá",
+      "Integración de más de 50 subestaciones de transmisión en una vista unificada",
+      "Migración ejecutada sin interrupciones en la operación de la red",
+    ],
+    metaDescription:
+      "Modernización del SCADA de transmisión de ANDE con plataforma General Electric eTerra. AESA integró interfaces ICCP, IEC 60870-5-104 y nuevas estaciones de operador en el centro de control nacional.",
+  },
+  "yacyreta-comunicaciones": {
+    client: "Entidad Binacional Yacyretá",
+    year: "2023",
+    location: "Ayolas, Paraguay",
+    scope: "Fibra óptica industrial · Switches Hirschmann · Red IP convergente · VoIP",
+    challenge:
+      "La red de telecomunicaciones de la central hidroeléctrica Yacyretá operaba con equipamiento envejecido, incapaz de soportar los protocolos de protección IEC 61850 y las demandas de ancho de banda de los nuevos sistemas de control. Se necesitaba una modernización sin afectar la operación continua de la central.",
+    solution:
+      "AESA renovó la infraestructura de telecomunicaciones de Yacyretá con switches industriales Hirschmann en topología de anillo redundante, migración de la planta de fibra óptica multimodo a monomodo, e implementación de VoIP corporativo con calidad de servicio priorizada para aplicaciones críticas.",
+    results: [
+      "325 km de fibra óptica integrada en red redundante de topología anillo",
+      "Disponibilidad de red superior al 99.9 % desde la puesta en servicio",
+      "Soporte de protocolos IEC 61850 GOOSE para protección diferencial",
+      "VoIP con 200+ extensiones y calidad de servicio garantizada",
+    ],
+    metaDescription:
+      "Modernización de red de telecomunicaciones en la Central Hidroeléctrica Yacyretá, ejecutada por AESA. Fibra óptica monomodo, switches Hirschmann en anillo redundante e implementación VoIP.",
+  },
+  "cie-subestacion": {
+    client: "CIE — Compañía de Ingeniería Eléctrica",
+    year: "2024",
+    location: "Paraguay",
+    scope: "Subestación compacta MT · Celdas GIS · Protección y control · Puesta en servicio",
+    challenge:
+      "El cliente requería una subestación de media tensión compacta para la alimentación confiable de un complejo industrial con alta demanda de continuidad operativa. El espacio físico disponible era limitado y los plazos de entrega muy exigentes.",
+    solution:
+      "AESA diseñó, fabricó e integró una subestación compacta de media tensión llave en mano, con celdas de aislamiento en gas SF6 (GIS), protecciones de sobreintensidad y distancia, transformadores de potencia y panel de control con SCADA local. Todo el proyecto fue coordinado desde el workstatement hasta la puesta en servicio (SAT).",
+    results: [
+      "Subestación compacta MT energizada dentro del cronograma establecido",
+      "Cero incidentes durante la construcción, montaje y puesta en servicio",
+      "Protecciones calibradas según normas IEC 60255 y coordinación de aislamiento",
+      "Sistema de control con visualización local y alarmas configurables",
+    ],
+    metaDescription:
+      "Subestación compacta de media tensión llave en mano, ejecutada por AESA para CIE en Paraguay. Celdas GIS SF6, protecciones IEC 60255, SCADA local y puesta en servicio SAT.",
+  },
+  "ande-centro-control": {
+    client: "ANDE — Administración Nacional de Electricidad",
+    year: "2023",
+    location: "Asunción, Paraguay",
+    scope: "SCADA de distribución · IEC 61968/61970 · Estaciones de operador · Integración OMS",
+    challenge:
+      "El centro de control de distribución de ANDE operaba con plataformas propietarias sin interoperabilidad entre sistemas, dificultando la gestión coordinada de la red y el análisis de fallas. La falta de estándares abiertos impedía la integración con sistemas de gestión de interrupciones (OMS) y medición avanzada (AMI).",
+    solution:
+      "AESA ejecutó la modernización del centro de control de distribución con migración a una plataforma SCADA abierta compatible con IEC 61968/61970 (CIM), integración del sistema OMS para gestión de interrupciones, e instalación de nuevas estaciones de operador con single-line diagram de la red de distribución metropolitana.",
+    results: [
+      "762 equipos de campo integrados al nuevo SCADA de distribución",
+      "Visibilidad unificada de la red de distribución de Asunción y Gran Asunción",
+      "Integración OMS con cálculo automático de zonas de corte y restauración",
+      "Reducción del tiempo medio de localización de fallas (MTTR) en un 45 %",
+    ],
+    metaDescription:
+      "Modernización del centro de control de distribución de ANDE con SCADA abierto IEC 61968/61970. AESA integró 762 equipos, sistema OMS y nuevas estaciones de operador en Asunción, Paraguay.",
+  },
+  "industrial-sala-electrica": {
+    client: "Empresa del sector industrial (confidencial)",
+    year: "2024",
+    location: "Paraguay",
+    scope: "Sala eléctrica MT/BT · Tableros de distribución · Transformadores · Sistema de control",
+    challenge:
+      "Una planta industrial de gran escala requería una sala eléctrica completa para alimentar una nueva línea de producción con alta demanda de potencia y exigentes requisitos de continuidad y calidad de energía. El proyecto debía coordinarse con la puesta en marcha de la línea para no generar retrasos operativos.",
+    solution:
+      "AESA ejecutó el diseño, fabricación, transporte, montaje y comisionamiento de la sala eléctrica llave en mano: tableros de media tensión con celdas SF6, transformadores de potencia, tableros de baja tensión con sistemas de arranque progresivo, UPS para cargas críticas e integración al sistema de automatización de la planta.",
+    results: [
+      "Sala eléctrica en operación dentro del cronograma, sincronizada con la línea de producción",
+      "Cero incidentes de seguridad eléctrica durante construcción, montaje y comisionamiento",
+      "Calidad de energía validada según normas IEC 61000 (armónicos, factor de potencia)",
+      "Sistema de UPS con autonomía de 30 minutos para cargas críticas de producción",
+    ],
+    metaDescription:
+      "Sala eléctrica industrial llave en mano ejecutada por AESA en Paraguay. Tableros MT/BT con celdas SF6, transformadores de potencia, UPS y sistema de control integrado al proceso productivo.",
+  },
+};
+
 export const DOWNLOADS = [
   { t: "Política de Calidad", sz: "PDF · 480 kB", d: "22.11.2024 — REV.01" },
   { t: "Código de Ética", sz: "PDF · 320 kB", d: "15.03.2024 — REV.02" },
