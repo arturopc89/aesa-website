@@ -40,7 +40,7 @@ export default function NosotrosPage() {
       <PageHero
         title="Atenas Energía S.A."
         kicker="NOSOTROS"
-        sub="Empresa de ingeniería eléctrica, SCADA y automatización en Paraguay. Diseñamos, integramos y operamos tecnología para sectores críticos desde el año 2000."
+        sub="Una empresa de ingeniería multisectorial fundada en el año 2000 por sus actuales directores."
       />
 
       <section className="sec" style={{ position: "relative" }}>
@@ -53,11 +53,11 @@ export default function NosotrosPage() {
                 className="h-section"
                 style={{ fontSize: "clamp(32px,3.6vw,52px)", margin: "14px 0 28px", color: "var(--aesa-1)" }}
               >
-                Ingeniería eléctrica y automatización en Paraguay desde el año 2000.
+                Soluciones llave en mano de alta tecnología.
               </h2>
               <div style={{ display: "flex", flexDirection: "column", gap: 18, fontSize: 15.5, lineHeight: 1.7, color: "var(--aesa-ink-2)" }}>
                 <p style={{ margin: 0 }}>
-                  Atenas Energía S.A. (AESA) es una empresa de ingeniería eléctrica, SCADA y automatización industrial con sede en Asunción, Paraguay. Ofrecemos soluciones tecnológicas de vanguardia para Energía, Industrias, Telecomunicaciones, Seguridad y Datacenters, con clientes como ANDE, ITAIPU Binacional, MOPC, Yacyretá y el sector privado.
+                  Atenas Energía S.A. (AESA) es una empresa de ingeniería multisectorial que ofrece soluciones tecnológicas de vanguardia a diferentes sectores del mercado, con presencia en Paraguay y países de la región.
                 </p>
                 <p style={{ margin: 0 }}>
                   Fue fundada en el año 2000 por sus actuales directores y actualmente el equipo se encuentra conformado por más de 100 colaboradores, incluyendo 30 ingenieros y técnicos en permanente capacitación y actualización.

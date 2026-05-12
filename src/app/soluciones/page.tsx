@@ -15,9 +15,9 @@ export default function SolucionesPage() {
   return (
     <>
       <PageHero
-        title="Ingeniería eléctrica, SCADA y automatización en Paraguay."
+        title="Soluciones tecnológicas de vanguardia."
         kicker="SOLUCIONES"
-        sub="Proyectos llave en mano para Energía, Industrias · Alimentos · Transporte, Telecomunicaciones, Seguridad y Datacenters. Clientes: ANDE, ITAIPU, MOPC y sector privado."
+        sub="Proyectos llave en mano para entregar resultados a medida en Energía, Industrias y Telecomunicaciones."
       />
       <section className="sec pattern-bg">
         <div className="wrap">

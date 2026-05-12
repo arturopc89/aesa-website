@@ -58,20 +58,20 @@ export const SOLUTIONS: Solution[] = [
     name: "Energía",
     img: IMG.energia,
     blurb:
-      "Generación, transmisión y distribución. Renovables, almacenamiento y transición energética llave en mano.",
+      "Generación, transmisión y distribución. Energías renovables, almacenamiento y transición energética llave en mano.",
     bullets: [
       "Subestaciones MT/AT",
       "Reconectadores y telecontrol",
       "Solar + BESS",
-      "Líneas y obra eléctrica",
+      "Líneas y tendido FO",
     ],
   },
   {
     id: "industrias",
-    name: "Industrias, Alimentos y Transporte",
+    name: "Industrias",
     img: IMG.industrias,
     blurb:
-      "Automatización industrial, integración de procesos y plataformas de control para plantas críticas, industria alimentaria y operaciones de transporte.",
+      "Automatización industrial, integración de procesos y plataformas de control para plantas críticas.",
     bullets: [
       "Automatización de procesos",
       "SCADA / HMI",
@@ -84,38 +84,12 @@ export const SOLUTIONS: Solution[] = [
     name: "Telecomunicaciones",
     img: IMG.telecom,
     blurb:
-      "Infraestructura crítica, redes industriales y comunicaciones para servicios esenciales y enlaces de misión crítica.",
+      "Infraestructura crítica, redes industriales, seguridad y comunicaciones para servicios esenciales.",
     bullets: [
       "Redes industriales",
-      "Enlaces de misión crítica",
+      "Ciberseguridad OT",
       "Tendido de fibra óptica",
       "Equipamiento de campo",
-    ],
-  },
-  {
-    id: "seguridad",
-    name: "Seguridad",
-    img: IMG.seguridad,
-    blurb:
-      "Sistemas integrales de seguridad electrónica y física: CCTV, control de accesos, cercos perimetrales, detección y aberturas técnicas.",
-    bullets: [
-      "CCTV y videoanalítica",
-      "Cercos perimetrales",
-      "Detección y PCI",
-      "Aberturas técnicas y control de accesos",
-    ],
-  },
-  {
-    id: "datacenters",
-    name: "Datacenters",
-    img: IMG.datacenters,
-    blurb:
-      "Diseño, integración y operación de salas técnicas: energía crítica, climatización de precisión, racks, monitoreo DCIM y ciberseguridad OT.",
-    bullets: [
-      "Energía crítica · UPS · BESS",
-      "Climatización de precisión",
-      "Monitoreo DCIM",
-      "Ciberseguridad OT",
     ],
   },
 ];

@@ -182,7 +182,7 @@ export function Hero() {
         <div style={{ position: "relative" }}>
           <Reveal>
             <div className="eyebrow" style={{ color: "var(--aesa-1)", marginBottom: 22, letterSpacing: ".14em" }}>
-              INGENIERÍA MULTISECTORIAL · DESDE EL AÑO 2000
+              ATENAS ENERGÍA · DESDE 2000
             </div>
           </Reveal>
           <Reveal delay={120}>
@@ -198,13 +198,12 @@ export function Hero() {
                 textWrap: "balance",
               }}
             >
-              Soluciones tecnológicas para{" "}
-              <span style={{ color: "var(--aesa-1)", whiteSpace: "nowrap" }}>múltiples</span> industrias
+              Proveemos soluciones tecnológicas de vanguardia.
             </h1>
           </Reveal>
           <Reveal delay={220}>
             <p style={{ fontSize: "clamp(16px,1.25vw,19px)", lineHeight: 1.6, color: "#3b4a40", maxWidth: 540, margin: "0 0 36px" }}>
-              Empresa de ingeniería eléctrica, SCADA y automatización en Asunción, Paraguay. Ejecutamos proyectos llave en mano para ANDE, ITAIPU, MOPC y el sector privado desde el año 2000.
+              Ingeniería multisectorial llave en mano para Energía, Industrias y Telecomunicaciones. 26 años entregando proyectos críticos en Paraguay y la región.
             </p>
           </Reveal>
           <Reveal delay={320}>
@@ -214,7 +213,7 @@ export function Hero() {
                 className="btn btn-primary"
                 style={{ padding: "18px 28px", borderRadius: 14, fontSize: 15, boxShadow: "0 8px 24px rgba(4,96,59,.28)" }}
               >
-                Descubre nuestras soluciones <span>→</span>
+                Ver soluciones <span>→</span>
               </Link>
               <Link
                 href="/contacto"
@@ -244,7 +243,7 @@ export function Hero() {
                 >
                   ▶
                 </span>
-                Ver cómo lo hacemos
+                Hablar con un especialista
               </Link>
             </div>
           </Reveal>
